@@ -12,7 +12,7 @@ github.authenticate({
 function getAllRepos() {
   const repos = {};
   const config = {
-    org: 'gschool',
+    org: process.env.ORG,
     page: 1,
     per_page: 100
   };
